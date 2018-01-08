@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="route.css">
+	<script src="../vue.js"></script>
+	<script src="../vue-router.js"></script>
+	<link rel="stylesheet" href="https://hinesboy.github.io/mavonEditor/dist/markdown/github-markdown.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+</head>
+<body>
+	<div id="root">
+		<nav>
+			<router-link to="/">文档</router-link>
+			<router-link to="/new">指导</router-link>
+		</nav>
+		<transition name="slide" mode="out-in">
+			<router-view></router-view>
+		</transition>
+	</div>
+</body>
+</html>
+<script src="components.js"></script>
+<script src="router.js"></script>
+<script src="app.js"></script>
